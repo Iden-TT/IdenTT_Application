@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context=".Homepage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/base_cardview"
+        android:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511"
+            tools:layout_editor_absoluteX="-55dp">
+
+            <RelativeLayout
+                android:id="@+id/fixed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/iden_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prove Your identity"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="#2E2E2E"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintVertical_bias="0.198" />
+
+                <Button
+                    android:id="@+id/new_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="New Scan"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/iden_tv"
+                    android:background="@drawable/button_bg"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/see_how"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See how it works >"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/new_scan"
+                    app:layout_constraintVertical_bias="0.198" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hidden_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fixed_layout">
+
+                <TextView
+                    android:id="@+id/dropdown_info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_1"
+                    android:textColor="#2E2E2E"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintVertical_bias="0.198" />
+
+                <TextView
+                    android:id="@+id/dropdown_info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:text="@string/step_2"
+                    android:textColor="#2E2E2E"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintVertical_bias="0.198" />
+
+                <TextView
+                    android:id="@+id/dropdown_info3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:text="@string/step_3"
+                    android:textColor="#2E2E2E"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintVertical_bias="0.198" />
+
+                <TextView
+                    android:id="@+id/dropdown_info4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:text="@string/step_4"
+                    android:textColor="#2E2E2E"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintVertical_bias="0.198" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/quick_actions_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Actions"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#2E2E2E"
+        android:layout_below="@+id/base_cardview"
+        android:textSize="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_2"
+        android:layout_width="match_parent"
+        style="@style/Base.CardView"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/quick_actions_tv">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_noun_info_2096291"
+            android:background="@drawable/rect2"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/info"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#2E2E2E"
+            android:layout_below="@+id/base_cardview"
+            android:textSize="16dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_noun_pan_card_3127608"
+            android:background="@drawable/rect2"
+            android:id="@+id/aadhar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="95dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/aadharcard_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aadhar"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#2E2E2E"
+            android:layout_below="@+id/base_cardview"
+            android:textSize="16dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="100dp"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rect2"
+            android:src="@drawable/ic_noun_pan_card_3127608"
+            android:text="Pan"
+            android:id="@+id/pan"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="170dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/pancard_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#2E2E2E"
+            android:layout_below="@+id/base_cardview"
+            android:textSize="16dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="185dp"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rect2"
+            android:src="@drawable/ic_noun_form_3324986"
+            android:id="@+id/form"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="245dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/bankForm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#2E2E2E"
+            android:layout_below="@+id/base_cardview"
+            android:textSize="16dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="255dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/prev_scans_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Scans"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#2E2E2E"
+        android:layout_below="@+id/cardview_2"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        />
+
+</RelativeLayout>
+
+</ScrollView>

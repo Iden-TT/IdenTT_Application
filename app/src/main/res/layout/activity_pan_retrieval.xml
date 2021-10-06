@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+        <ImageView
+            android:id="@+id/Verified"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/ic_group_6610"/>
+        <ImageView
+            android:id="@+id/backVer"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_icon_feather_arrow_left"/>
+        <TextView
+            android:id="@+id/DocVer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Verified"
+            android:layout_centerHorizontal="true"
+            android:text="Document Fetched"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#48BF84"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DocVer1"
+            android:id="@+id/cardview_1"
+            android:layout_centerHorizontal="true"
+            android:elevation="0dp"
+            android:layout_margin = "50dp"
+            android:background="@drawable/cardview_bg"
+            >
+
+            <RelativeLayout
+                android:id="@+id/fixed_layout"
+                android:layout_width="match_parent"
+                android:background="@drawable/opened_bg"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pan Card - 111 111 1111"
+                    android:id="@+id/pan_info"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="#2E2E2E"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name - Pratham Goel"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:id="@+id/name_info"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#2E2E2E"
+                    android:layout_below="@+id/pan_info"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No - 9927090036"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:id="@+id/mobile_info"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#2E2E2E"
+                    android:layout_below="@+id/name_info"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/view_pan"
+                    android:text="View Pan"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/mobile_info"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_bg"
+                    android:textSize="14dp"
+
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/HomeReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:layout_below="@+id/cardview_1"
+            android:layout_centerHorizontal="true"
+            android:text="Return To Home Page >"
+            android:textSize="12dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#FC5D73"/>
+
+        <TextView
+            android:id="@+id/valid_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/HomeReq"
+            android:layout_centerHorizontal="true"
+            android:text="The document will be valid for 10 mins"
+            android:textSize="13dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="#FC5D73"/>
+
+    </RelativeLayout>
+
+</ScrollView>

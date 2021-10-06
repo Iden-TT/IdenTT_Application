@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VerificationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification"
+        android:fontFamily="@font/comfortaa_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/tv_verify"
+        android:textSize="30dp"
+        android:textColor="#2E2E2E"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="We have just sent you a 6 digit code to"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_regular"
+        android:layout_below="@+id/tv_verify"
+        android:id="@+id/tv_verify_sub"
+        android:textColor="#802E2E2E"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_verify_sub"
+        android:text="+91 xxxxxxxxxx"
+        android:id="@+id/tv_verify_phone"
+        android:fontFamily="@font/comfortaa_regular"
+        android:layout_marginLeft="95dp"
+        android:textColor="#802E2E2E"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Number"
+        android:fontFamily="@font/comfortaa_regular"
+        android:layout_below="@+id/tv_verify_sub"
+        android:layout_toRightOf="@+id/tv_verify_phone"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/change_number_tv"
+        android:textStyle="normal"
+        android:textColor="#2E2E2E"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2E2E2E"
+        app:height="40dp"
+        app:width="40dp"
+        android:layout_below="@+id/change_number_tv"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        app:otp_box_background="@color/text_col"
+        app:length="6"
+        app:otp_text_size="24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:paddingRight="65dp"
+        android:paddingLeft="65dp"
+        android:layout_below="@+id/change_number_tv"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:id="@+id/proceed"
+        />
+
+</RelativeLayout>

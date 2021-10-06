@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <ImageView
+        android:id="@+id/Verified"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ic_group_6610"/>
+    <ImageView
+        android:id="@+id/backVer"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_icon_feather_arrow_left"/>
+    <TextView
+        android:id="@+id/DocVer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Verified"
+        android:layout_centerHorizontal="true"
+        android:text="Account opened"
+        android:textSize="24dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#48BF84"/>
+
+    <TextView
+        android:id="@+id/AdhaarInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DocVer1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/opened_bg"
+        android:fontFamily="@font/comfortaa_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="15dp"
+        android:drawableLeft="@drawable/ic_layer_26"
+        android:text="1111 1111 1111 - Pratham Goel"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/view_form"
+        android:text="View Form"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/AdhaarInfo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:textSize="14dp"
+
+        />
+
+    <TextView
+        android:id="@+id/HomeReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/view_form"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:text="Return To Home Page >"
+        android:textSize="12dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#FC5D73"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:text="A same has been sent to the person incharge."
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#2E2E2E"/>
+
+</RelativeLayout>
