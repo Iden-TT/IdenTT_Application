@@ -68,7 +68,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 You can download the build APK for testing or you can directly view the prototype from <a href="https://xd.adobe.com/view/cf49cad1-bfa2-43ff-9072-3c76c846d141-9a1a/?fullscreen">here</a>.
 
-```Note: We are providing here, the prototype link for the mobile application, to view the working application download the build apk```
+```Note: We are providing here, the prototype link for the mobile application, to view the working application download the build apk from "releases-finalbuild/IdenTT.apk"```
 
 
 ### Step - 1

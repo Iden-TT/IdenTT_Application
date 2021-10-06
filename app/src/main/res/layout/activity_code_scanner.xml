@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameColor="@android:color/white"
+        app:frameCornersSize="50dp"
+        app:frameCornersRadius="10dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1.37"
+        app:frameSize="0.8"
+        app:frameThickness="5dp"
+        app:maskColor="#802E2E2E"
+        />
+    <TextView
+        android:id="@+id/QR"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/scanner_view"
+        android:layout_marginLeft="25dp"
+        android:text="Place your camera in front of the QR Code"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#2E2E2E"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BackQR"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="15dp"
+        android:elevation="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_icon_feather_arrow_left"
+        />
+</RelativeLayout>

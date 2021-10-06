@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_regular"
+            android:text="Step-2"
+            android:textColor="#2E2E2E"
+            android:textSize="24dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="16dp"
+            />
+        <ImageView
+            android:src="@drawable/ic_objects"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/image_id"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/Actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_id"
+            android:layout_marginTop="25dp"
+            android:text="Scan the QR code on the Mobile App."
+            android:gravity="center_horizontal"
+            android:textColor="#2E2E2E"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/proceed"
+            android:layout_height="60dp"
+            android:layout_width="329dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/comfortaa_regular"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_below="@+id/Actions"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

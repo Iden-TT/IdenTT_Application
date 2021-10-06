@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683100235525",
+    "project_id": "identt-9b64f",
+    "storage_bucket": "identt-9b64f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683100235525:android:41ab3220c015e4fdb4796c",
+        "android_client_info": {
+          "package_name": "com.example.identt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683100235525-5ta4knetrumrh3eqmk6octp470joovrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbYQsGDo_mFobCP7PSPeAjfaQdH3_0fwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683100235525-5ta4knetrumrh3eqmk6octp470joovrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

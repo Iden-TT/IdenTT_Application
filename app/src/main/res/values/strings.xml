@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IdenTT</string>
+    <string name="step_1">Step 1 - Whenever you want to prove your identity ask the security person to generate a unique QR from "app" api(You have to provide him phone no.)</string>
+    <string name="step_2">Step 2 - When Security person enters your phone no. a unique secured QR will be generated</string>
+    <string name="step_3">Step 3 - You have to scan that QR and a pop up will ask your phone number to confirm that you requested for identity and then a OTP will be sent to your number.</string>
+    <string name="step_4">Step 4 - After successful verification, our app will send you the verified identity to you as well the security person.</string>
+
+</resources>
